@@ -1,6 +1,18 @@
 const properties = require('./json/properties.json');
 const users = require('./json/users.json');
 
+
+// PSQL
+const { Pool } = require('pg');
+
+const pool = new Pool({
+  user: 'juliman',
+  password: '123',
+  host: 'localhost',
+  database: 'lightbnb'
+});
+
+
 /// Users
 
 /**
