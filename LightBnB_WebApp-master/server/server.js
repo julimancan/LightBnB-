@@ -18,6 +18,7 @@ app.use(cookieSession({
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+
 // /api/endpoints
 const apiRouter = express.Router();
 apiRoutes(apiRouter, database);
